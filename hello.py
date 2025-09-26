@@ -8,7 +8,7 @@ def hello():
 
 @app.route("/about")
 def about():
-    return '<p>This is an about page</p><a href="/">Go back</a>'
+    return '<p>This is an about page</p><a href="python.org">Python</a><a href="/">Go back</a>'
 
 @app.route("/contact")
 def contact():
