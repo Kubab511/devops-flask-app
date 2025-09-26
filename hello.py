@@ -12,4 +12,4 @@ def about():
 
 @app.route("/contact")
 def contact():
-    return '<p>Contact me at: c23310371@mytudublin.ie</p><a href="/">Go back</a>'
+    return '<p>Contact me at: C23310371@mytudublin.ie</p><a href="/">Go back</a>'
