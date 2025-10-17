@@ -13,3 +13,6 @@ def about():
 @app.route("/contact")
 def contact():
     return '<p>Contact me at: C23310371@mytudublin.ie</p><a href="/">Go back</a>'
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=5000)
