@@ -1,0 +1,19 @@
+services:
+  redis-server:
+    image: redis:alpine
+    ports:
+      - "6379:6379"
+    networks:
+      - app-network
+
+  flask-app:
+    build: .
+    ports:
+      - "5000:5000"
+    depends_on:
+      - redis-server
+    networks:
+      - app-network
+
+networks:
+  app-network:

@@ -1,8 +1,8 @@
-FROM python:3.14
+FROM python:3.14-alpine
 
 WORKDIR /usr/src/app
 
-RUN pip install flask
+RUN pip install flask redis
 
 COPY hello.py .
 
